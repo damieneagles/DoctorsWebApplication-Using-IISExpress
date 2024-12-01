@@ -1,4 +1,5 @@
 ECHO Copying DACPAC...
-REM cd C:\[Solutions]\[2023DoctorsWebApplication]\DoctorsWebApplication
-xcopy /e /y /-I DoctorsDatabase\bin\release\DoctorsDatabase.dacpac DoctorsWebApplication\bin\Release\net9.0\publish\DoctorsDatabase.dacpac
-
+IF NOT EXIST ..\DoctorsWebApplication\bin\release\net9.0 ( mkdir ..\DoctorsWebApplication\bin\release\net9.0 )
+IF NOT EXIST ..\DoctorsWebApplication\bin\release\net9.0\publish ( mkdir ..\DoctorsWebApplication\bin\release\net9.0\publish )
+copy /y ..\DoctorsDatabase\bin\release\doctorsdatabase.dacpac ..\DoctorsWebApplication\bin\release\net9.0
+copy /y ..\DoctorsDatabase\bin\release\doctorsdatabase.dacpac ..\DoctorsWebApplication\bin\release\net9.0\publish
