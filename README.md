@@ -8,3 +8,5 @@ Installs an SQL Server database, whereever it can find a localDB.
 
 To be used as a reference application as it is not quite polished so far, it still needs some more work to be useful to business.
 
+See Screenshot RE SSL and remember IIS and IIS Express are two different products.
+![IIS DoctorsWebSite](https://github.com/user-attachments/assets/716fcf77-5de8-4a86-ab6a-63ff0682b298)
